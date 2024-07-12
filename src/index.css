@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.debug {
+  border: 1px solid red;
+}
+
+.loginbg {
+  background-color: #01031c;
+}
+.signtab-bg{
+    background-color: #161a3f;
+}
+.signActiveTab-bg{
+    background-color: #1c0338;
+}
+
+.app {
+  background-image: url("src/assets/ani-night.jpg");
+}
+
+
+/* //////////////////// */
+#components-form-demo-normal-login .login-form {
+  max-width: 300px;
+}
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+#components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+  float: left;
+}
+#components-form-demo-normal-login .login-form-button {
+  width: 100%;
+}
+/* //////////////////// */
