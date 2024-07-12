@@ -214,6 +214,14 @@ function SignUpForm() {
               max: 32,
               message: "Password cannot be less than 32 characters",
             },
+            ({ getFieldValue }) => ({
+              validator(_, value) {
+                if (!value || getFieldValue("password") === value) {
+                  return Promise.resolve();
+                }
+                return Promise.reject("Passwords do not match");
+              },
+            }),
           ]}
           key="confirmpassword"
         >
